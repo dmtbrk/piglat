@@ -4,6 +4,8 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+
+	"github.com/ortymid/piglat/piglat"
 )
 
 func main() {
@@ -18,7 +20,7 @@ func main() {
 			continue
 		}
 
-		writer := NewWriter(os.Stdout)
+		writer := piglat.NewWriter(os.Stdout)
 		_, err = writer.WriteString(text)
 		if err != nil {
 			fmt.Println("Cannot convert your text. Reason:", err, "\nTry again...")
