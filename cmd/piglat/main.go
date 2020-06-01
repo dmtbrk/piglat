@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/ortymid/piglat"
+	"github.com/ortymid/piglat/pkg/piglat"
 )
 
 func main() {
